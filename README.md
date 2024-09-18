@@ -5,7 +5,7 @@ This repository contains a microservice made using Flask that allows uploading s
 
 # Technologies used
 
-* Flask - I chose Flask as the backend because I am decently familiar with it. Flask handled calling all APIs, giving access to the project's pages, and formatting data.
+* Flask is used as the backend.
 * Sqlite3 was used for storage, as it is a lightweight sql implementation that stores all data in a .db file.
 * HTML/CSS w/ Jinja2 - HTML was used to design the project's pages, and Jinja2 was used to implement data passed by Flask into each page. CSS was used to style the pages.
   * Bootstrap - was used for overall page layout.
