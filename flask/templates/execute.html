@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<body style="background: #5296bb;">
+    <nav class="navbar navbar-dark navbar-expand-md py-3" style="background: #375a7f;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center"><span>Nikolai Rylov</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/listfiles">Script List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <h1 class="text-center" style="color: #ffffff;">Script output</h1>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col" style="text-align: center;border-style: none;">
+                            <textarea name="scriptout" id="scriptout" cols="100" rows="20">{% for item in rows %}{{ item }}&#10;{% endfor %}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+{% endblock %}
+
