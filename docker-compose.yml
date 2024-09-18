@@ -7,7 +7,7 @@ services:
     container_name: flask
     restart: unless-stopped
     environment:
-      - APP_NAME=assessment
+      - APP_NAME=file_upload_execute
     expose:
       - 8080
   nginx:
